@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  min-width: 375px;
+  /* text-align: center; */
+}
+header {
+  text-align: center;
+  margin: 4rem 0;
+}
+.section-one img {
+  display: none;
+}
+.section-one-text {
+  margin-bottom: 5rem;
+  text-align: center;
+  line-height: 2;
+}
+.section-one-text h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.section-one-text button {
+  padding: 1rem 2rem;
+}
+.but1 {
+  background-color: #4892a6;
+  color: white;
+  border: 2px;
+  border-radius: 30px;
+}
+.but2 {
+  background-color: #8460b3;
+  color: white;
+  border: 2px;
+  border-radius: 30px;
+}
+.section-two {
+  margin: 14px 1rem;
+}
+.section-two img {
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  margin-bottom: 1rem;
+}
+.section-three {
+  text-align: center;
+}
+.section-three h5 {
+  letter-spacing: 4px;
+  color: #4892a6;
+}
+.section-three h1 {
+  font-size: 2rem;
+}
+.section-three p {
+  padding: 0 2rem 0 2rem;
+}
+@media (min-width: 576px) {
+  .section-one .section-one-text {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+      url(/images/assets/desktop/image-hero-left.png);
+    color: white;
+    padding: 5px;
+  }
+  .section-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  .section-two img {
+    border-radius: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .section-one .section-one-text {
+    background: white;
+    color: black;
+    padding: 0;
+  }
+  .section-one img {
+    display: block;
+  }
+  .section-one {
+    display: grid;
+    grid-template-columns: 255px 1fr 300px;
+  }
+  .section-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 30px;
+  }
+}
